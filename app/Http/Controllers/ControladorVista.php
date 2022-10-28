@@ -9,7 +9,8 @@ class ControladorVista extends Controller
 {
     public function procesarLibro(validadorBiblioteca $req)
     {
-        return redirect()->route('Registro')->with('confirmacion', 'Libro guardado');
+        $titulo=$req->input('txtTitulo');
+        return redirect()->route('Registro')->with('confirmacion', compact('titulo'));
         //return $req->all();
         //return $req->path();
         //return $req->url();
