@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\validadorBiblioteca;
+use App\Http\Requests\validadorExa;
 
 class ControladorVista extends Controller
 {
@@ -16,6 +17,18 @@ class ControladorVista extends Controller
         //return $req->url();
         //return $req->ip();
     }
+
+    public function procesarCliente(validadorExa $req)
+    {
+        $nombre=$req->input('txtNombre');
+        return redirect()->route('reg')->with('confirmacion', compact('nombre'));
+    }
+
+    public function showRegistroCliente()
+    {
+        return view('registrosCliente');
+    }
+
 
     public function showMenu()
     {

@@ -9,7 +9,7 @@
             <div class="card-body">
               <h5 class="card-title">Marilar Aleixandre, Premio Nacional de Narrativa 2022</h5>
               <p class="card-text">La escritora, que ha desarrollado su obra en gallego, destaca, según el jurado, por su “resiliencia, emancipación del ser humano, sororidad y compromiso con los demás”</p>
-              <p class="card-text"><a href="https://elpais.com/cultura/2022-10-25/marilar-aleixandre-premio-nacional-de-narrativa-2022.html" class="ml-1 underline"><small class="text-muted">Ver la noticia</small></p>
+              <p class="card-text"><a href="https://elpais.com/cultura/2022-10-25/marilar-aleixandre-premio-nacional-de-narrativa-2022.html" class="ml-1 underline"><small class="text-muted">Ver la noticia</small></a></p>
             </div>
           </div>
         <div class="card mb-3">
@@ -17,7 +17,7 @@
             <div class="card-body">
               <h5 class="card-title">Adrienne Rich fa arqueologia de la maternitat</h5>
               <p class="card-text">La poeta i escriptora estatunidenca explora allò íntim i social de ser mare a l’assaig ‘Naixem de dona. La maternitat com a experiència i institució'</p>
-              <p class="card-text"><a href="https://elpais.com/quadern/2022-10-25/arqueologia-de-la-maternitat.html" class="ml-1 underline"><small class="text-muted">Ver la noticia</small></p>
+              <p class="card-text"><a href="https://elpais.com/quadern/2022-10-25/arqueologia-de-la-maternitat.html" class="ml-1 underline"><small class="text-muted">Ver la noticia</small></a></p>
             </div>
           </div>
         <div class="card mb-3">
@@ -25,7 +25,7 @@
             <div class="card-body">
               <h5 class="card-title">Polimorfisme voraç</h5>
               <p class="card-text">Tal vegada convindria delimitar quins trets són susceptibles de variació i quins convé preservar dins la composició</p>
-              <p class="card-text"><a href="https://elpais.com/quadern/2022-10-25/polimorfisme-vorac.html" class="ml-1 underline"><small class="text-muted">Ver la noticia</small></p>
+              <p class="card-text"><a href="https://elpais.com/quadern/2022-10-25/polimorfisme-vorac.html" class="ml-1 underline"><small class="text-muted">Ver la noticia</small></a></p>
             </div>
         </div>
 

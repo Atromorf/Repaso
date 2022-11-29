@@ -32,7 +32,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link {{ request()->routeIs('Registro')?'text-danger fw-bold':'' }}" aria-current="page" href="{{ route('Registro') }}">Formulario</a>
+                <a class="nav-link {{ request()->routeIs('formulario.create')?'text-danger fw-bold':'' }}" aria-current="page" href="{{ route('formulario.create') }}">Formulario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('clientes.create')?'text-danger fw-bold':'' }}" aria-current="page" href="{{ route('clientes.create') }}">Registro</a>
               </li>
             </ul>
           </div>

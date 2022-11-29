@@ -2,6 +2,7 @@
 
 @section('contenido')
 
+
 @if (session('confirmacion'))
     
     <script> Swal.fire(
@@ -11,6 +12,7 @@
         ) </script>
         
 @endif
+
 
 <div class="container col-md-6">
     <h1 class="display-4 text-center mt-5 mb-5">Ingresar</h1>
@@ -23,7 +25,7 @@
 
         <div class="card-body">
             
-            <form method="POST" action="guardarLibro">
+            <form method="POST" action="{{ route('formulario.store')}}">
                 @csrf
 
                 <div class="mb-2 text-gray-600 dark:text-gray-400 text-sm">
@@ -68,5 +70,6 @@
     </div>
 
 </div>    
+
 
 @stop
