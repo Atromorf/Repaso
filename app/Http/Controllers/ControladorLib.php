@@ -18,7 +18,7 @@ class ControladorLib extends Controller
     {
         $resultForm=DB::table('tb_formulario')->get();
 
-        return view('registro', compact('resultForm'));
+        return view('Formularios', compact('resultForm'));
     }
 
     /**
@@ -87,14 +87,18 @@ class ControladorLib extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(validadorDiario $request, $id)
+    public function update(validadorBiblioteca $request, $id)
     {
-        DB::table('tb_recuerdos')->where('idRecuerdo', $id)->update([
+        DB::table('tb_formulario')->where('idFormulario', $id)->update([
+            'ismn' => $request->input('txtISBN'),
             'titulo' => $request->input('txtTitulo'),
-            'recuerdo' => $request->input('txtRecuerdo'),
+            'autor' => $request->input('txtAutor'),
+            'paginas' => $request->input('txtPaginas'),
+            'editorial' => $request->input('txtEditorial'),
+            'email' => $request->input('txtEmail'),
             'updated_at' => Carbon::now(),
         ]);
-        return redirect('recuerdo/index')->with('confirmacion', 'Recuerdo actualizado');
+        return redirect('formulario/index')->with('confirmacion', 'Formulario actualizado');
     }
 
     /**

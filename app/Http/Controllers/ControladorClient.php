@@ -18,7 +18,7 @@ class ControladorClient extends Controller
     {
         $resultClient=DB::table('tb_clientes')->get();
 
-        return view('registrosCliente', compact('resultClient'));
+        return view('usuarios', compact('resultClient'));
     }
 
     /**
@@ -72,9 +72,7 @@ class ControladorClient extends Controller
      */
     public function edit($id)
     {
-        $consultaId=DB::table('tb_formulario')->where('idFormulario', $id)->first();
-        
-        return view('editar', compact('consultaId'));
+        //
     }
 
     /**
@@ -84,14 +82,15 @@ class ControladorClient extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(validadorDiario $request, $id)
+    public function update(validadorExa $request, $id)
     {
-        DB::table('tb_recuerdos')->where('idRecuerdo', $id)->update([
-            'titulo' => $request->input('txtTitulo'),
-            'recuerdo' => $request->input('txtRecuerdo'),
+        DB::table('tb_clientes')->where('idCliente', $id)->update([
+            'nombre' => $request->input('txtNombre'),
+            'email' => $request->input('txtEmail'),
+            'ine' => $request->input('txtINE'),
             'updated_at' => Carbon::now(),
         ]);
-        return redirect('recuerdo/index')->with('confirmacion', 'Recuerdo actualizado');
+        return redirect('clientes/index')->with('confirmacion', 'Usuario actualizado');
     }
 
     /**
