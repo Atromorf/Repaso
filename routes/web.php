@@ -33,6 +33,7 @@ Route::post('clientes/store', [ControladorClient::class, 'store'])->name('client
 Route::get('clientes/index', [ControladorClient::class, 'index'])->name('clientes.index');
 //Route::get('clientes/{id}/show', [ControladorClient::class, 'edit'])->name('clientes.edit');
 Route::put('clientes/{id}/update', [ControladorClient::class, 'update'])->name('clientes.update');
+Route::delete('clientes/{id}/delete', [ControladorClient::class, 'destroy'])->name('clientes.destroy');
 //rutas para el controlador de la vista
 
 Route::controller(ControladorVista::class)->group(

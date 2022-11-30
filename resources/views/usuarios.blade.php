@@ -6,21 +6,12 @@
 
 @include('ModalEliminarU')
 
-@if (session()->has('confirmar'))
-    
-    {!! "<script> Swal.fire(
-        'Eliminado correctamente!',
-        'Tu recuerdo se agrego satisfactoriamente!',
-        'success'
-        ) </script>" !!}
-
-@endif
 
 @if (session()->has('confirma'))
     
     {!! "<script> Swal.fire(
         'Eliminado correctamente!',
-        'Tu recuerdo se elimino satisfactoriamente!',
+        'Tu usuario se elimino satisfactoriamente!',
         'success'
         ) </script>" !!}
 

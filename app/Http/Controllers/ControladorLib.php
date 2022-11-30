@@ -109,7 +109,7 @@ class ControladorLib extends Controller
      */
     public function destroy($id)
     {
-        DB::table('tb_recuerdos')->where('idRecuerdo', $id)->delete();
-        return redirect('recuerdo/index')->with('confirma', 'Recuerdo eliminado');
+        DB::table('tb_formulario')->where('idFormulario', $id)->delete();
+        return redirect('formulario/index')->with('confirma', 'Recuerdo eliminado');
     }
 }

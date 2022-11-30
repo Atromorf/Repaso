@@ -8,7 +8,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form method="POST" action="{{route('formulario.destroy',$vista->idCliente)}}">
+          <form method="POST" action="{{route('clientes.destroy',$vista->idCliente)}}">
             @csrf
             @method('DELETE')
     
