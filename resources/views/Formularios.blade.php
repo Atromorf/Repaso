@@ -67,7 +67,7 @@
                     Editar <i class="bi bi-pen"></i>
                   </button>
                   <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalEliminar{{$consulta->idFormulario}}">
-                    Eliminar
+                    Eliminar <i class="bi bi-backspace"></i>
                   </button>
                 </form>
             </div>

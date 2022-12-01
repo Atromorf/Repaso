@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Guardar Libro</button>
+                    <button type="submit" class="btn btn-primary">Guardar Libro <i class="bi bi-journal-check"></i></button>
                 </div>
             
             </form>
@@ -69,7 +69,8 @@
 
     </div>
 
-</div>    
+</div>   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"> 
 
 
 @stop
